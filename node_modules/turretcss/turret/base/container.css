@@ -1,0 +1,34 @@
+.container {
+  margin: 0 auto;
+  padding-left: var(--container-gutter);
+  padding-right: var(--container-gutter);
+  width: 100%;
+
+  @media (--xxl) {
+    max-width: var(--container-xxl);
+  }
+
+  @media (--xl) {
+    max-width: var(--container-xl);
+  }
+
+  @media (--l) {
+    max-width: var(--container-l);
+  }
+
+  @media (--m) {
+    max-width: var(--container-m);
+  }
+
+  @media (--s) {
+    max-width: var(--container-s);
+  }
+
+  @media (--xs) {
+    max-width: var(--container-xs);
+  }
+
+  @media (--xxs) {
+    max-width: var(--container-xxs);
+  }
+}

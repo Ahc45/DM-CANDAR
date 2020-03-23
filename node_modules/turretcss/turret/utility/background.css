@@ -1,0 +1,23 @@
+.background-repeat {
+  background-repeat: repeat;
+}
+
+.background-no-repeat {
+  background-repeat: no-repeat;
+}
+
+.background-fixed {
+  background-attachment: fixed;
+}
+
+.background-cover {
+  background-size: cover;
+}
+
+.background-center {
+  background-position: center;
+}
+
+.background-transparent {
+  background: transparent;
+}

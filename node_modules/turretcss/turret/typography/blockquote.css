@@ -1,0 +1,23 @@
+blockquote {
+  margin: var(--blockquote-margin);
+  padding: var(--blockquote-padding);
+  font-family: var(--blockquote-font-family);
+  font-weight: var(--blockquote-font-weight);
+  font-size: var(--blockquote-font-size);
+  font-style: var(--blockquote-font-style);
+  color: var(--blockquote-color);
+  line-height: var(--blockquote-line-height);
+  text-transform: var(--blockquote-text-transform);
+  letter-spacing: var(--blockquote-letter-spacing);
+
+  & p {
+    font-family: inherit;
+    font-weight: inherit;
+    font-size: inherit;
+    font-style: inherit;
+    color: inherit;
+    line-height: inherit;
+    text-transform: inherit;
+    letter-spacing: inherit;
+  }
+}

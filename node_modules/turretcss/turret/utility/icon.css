@@ -1,0 +1,63 @@
+.icon,
+.icon > svg,
+svg.icon {
+  display: inline-block;
+  width: var(--icon-size);
+  height: var(--icon-size);
+}
+
+.icon-xxl,
+.icon-xxl > svg,
+svg.icon-xxl {
+  display: inline-block;
+  width: var(--icon-xxl-size);
+  height: var(--icon-xxl-size);
+}
+
+.icon-xl,
+.icon-xl > svg,
+svg.icon-xl {
+  display: inline-block;
+  width: var(--icon-xl-size);
+  height: var(--icon-xl-size);
+}
+
+.icon-l,
+.icon-l > svg,
+svg.icon-l {
+  display: inline-block;
+  width: var(--icon-l-size);
+  height: var(--icon-l-size);
+}
+
+.icon-m,
+.icon-m > svg,
+svg.icon-m {
+  display: inline-block;
+  width: var(--icon-m-size);
+  height: var(--icon-m-size);
+}
+
+.icon-s,
+.icon-s > svg,
+svg.icon-s {
+  display: inline-block;
+  width: var(--icon-s-size);
+  height: var(--icon-s-size);
+}
+
+.icon-xs,
+.icon-xs > svg,
+svg.icon-xs {
+  display: inline-block;
+  width: var(--icon-xs-size);
+  height: var(--icon-xs-size);
+}
+
+.icon-xxs,
+.icon-xxs > svg,
+svg.icon-xxs {
+  display: inline-block;
+  width: var(--icon-xxs-size);
+  height: var(--icon-xxs-size);
+}

@@ -1,0 +1,35 @@
+.lead {
+  margin: var(--lead-margin);
+  font-family: var(--lead-font-family);
+  font-weight: var(--lead-font-weight);
+  font-size: var(--lead-font-size);
+  font-style: var(--lead-font-style);
+  color: var(--lead-color);
+  line-height: var(--lead-line-height);
+  text-transform: var(--lead-text-transform);
+  letter-spacing: var(--lead-letter-spacing);
+}
+
+.lead-xxl {
+  font-size: var(--lead-xxl-font-size);
+}
+
+.lead-xl {
+  font-size: var(--lead-xl-font-size);
+}
+
+.lead-l {
+  font-size: var(--lead-l-font-size);
+}
+
+.lead-s {
+  font-size: var(--lead-s-font-size);
+}
+
+.lead-xs {
+  font-size: var(--lead-xs-font-size);
+}
+
+.lead-xxs {
+  font-size: var(--lead-xxs-font-size);
+}

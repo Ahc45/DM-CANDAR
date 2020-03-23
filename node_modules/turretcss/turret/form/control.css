@@ -1,0 +1,182 @@
+.control {
+  display: flex;
+  position: relative;
+  margin: var(--control-margin);
+  padding: var(--control-padding);
+  font-family: var(--control-font-family);
+  font-weight: var(--control-font-weight);
+  font-size: var(--control-font-size);
+  font-style: var(--control-font-style);
+  color: var(--control-color);
+  line-height: var(--control-line-height);
+  text-transform: var(--control-text-transform);
+  letter-spacing: var(--control-letter-spacing);
+  text-transform: var(--control-text-transform);
+  letter-spacing: var(--control-letter-spacing);
+  cursor: pointer;
+
+  &.control-inline {
+    display: inline-flex;
+    margin-right: var(--control-inline-margin-right);
+  }
+
+  &:hover .control-indicator {
+    background-color: var(--control-hover-indicator-background);
+    border-color: var(--control-hover-indicator-border-color);
+    box-shadow: var(--control-hover-indicator-box-shadow);
+  }
+
+  & input[type='checkbox'],
+  & input[type='radio'] {
+    z-index: -1;
+    position: absolute;
+    margin: 0;
+    opacity: 0;
+
+    &:focus ~ .control-indicator {
+      background-color: var(--control-focus-indicator-background);
+      border-color: var(--control-focus-indicator-border-color);
+      box-shadow: var(--control-focus-indicator-box-shadow);
+      outline: var(--focus-outline);
+      outline-offset: var(--focus-outline-offset);
+    }
+
+    &:checked {
+      & ~ .control-indicator {
+        background-color: var(--control-checked-indicator-background);
+        border: var(--control-checked-indicator-border);
+      }
+
+      & ~ .control-label {
+        color: var(--control-checked-label-color);
+      }
+    }
+  }
+
+  &.checkbox {
+    & .control-indicator {
+      border-radius: var(--checkbox-indicator-border-radius);
+    }
+
+    & input[type='checkbox']:checked {
+      & ~ .control-indicator {
+        background-color: var(--control-checked-indicator-background);
+        background-image: url('data:image/svg+xml;utf8,<svg xmlns="http://www.w3.org/2000/svg" width="100%" height="100%" viewBox="0 0 16 16"><polyline points="4 8.43 6.67 11 12 5" fill="none" stroke="white" stroke-miterlimit="10" stroke-width="2"/></svg>');
+      }
+    }
+  }
+
+  &.radio {
+    & .control-indicator {
+      border-radius: var(--radio-indicator-border-radius);
+    }
+
+    & input[type='radio']:checked ~ .control-indicator::before {
+      position: absolute;
+      top: 50%;
+      left: 50%;
+      transform: translate(-50%, -50%);
+      content: '';
+      width: var(--radio-indicator-size);
+      height: var(--radio-indicator-size);
+      background: var(--radio-indicator-background);
+      border-radius: var(--radio-indicator-border-radius);
+    }
+  }
+
+  &.switch {
+    & .control-indicator {
+      width: 2em;
+      border-radius: var(--switch-indicator-border-radius);
+
+      &::before {
+        display: block;
+        position: absolute;
+        top: calc(var(--control-indicator-border-width) * -1);
+        left: calc(var(--control-indicator-border-width) * -1);
+        content: '';
+        width: 1em;
+        height: 1em;
+        background-color: var(--switch-indicator-background);
+        border-width: inherit;
+        border-style: inherit;
+        border-color: inherit;
+        border-radius: var(--switch-indicator-border-radius);
+        transition: all var(--speed) ease-in-out;
+      }
+    }
+
+    & input[type='checkbox']:checked ~ .control-indicator::before {
+      left: calc(100% - 1em + var(--control-indicator-border-width));
+    }
+  }
+
+  &.error {
+    & input:checked ~ .control-indicator {
+      background-color: var(--error) !important;
+      border-color: var(--error) !important;
+    }
+  }
+
+  &.warning {
+    & input:checked ~ .control-indicator {
+      background-color: var(--warning) !important;
+      border-color: var(--warning) !important;
+    }
+  }
+
+  &.success {
+    & input:checked ~ .control-indicator {
+      background-color: var(--success) !important;
+      border-color: var(--success) !important;
+    }
+  }
+
+  &.info {
+    & input:checked ~ .control-indicator {
+      background-color: var(--info) !important;
+      border-color: var(--info) !important;
+    }
+  }
+}
+
+.control-indicator {
+  flex: 0 0 auto;
+  position: relative;
+  display: block;
+  user-select: none;
+  vertical-align: middle;
+  width: 1em;
+  height: 1em;
+  font-size: var(--control-indicator-size);
+  line-height: 1;
+  text-align: center;
+  background-color: var(--control-indicator-background);
+  background-position: center center;
+  background-repeat: no-repeat;
+  border-width: var(--control-indicator-border-width);
+  border-style: var(--control-indicator-border-style);
+  border-color: var(--control-indicator-border-color);
+  box-shadow: var(--control-indicator-box-shadow);
+  transition: all var(--speed) ease-in-out;
+}
+
+.control-label {
+  flex: 1 1 auto;
+  display: block;
+  margin: var(--control-label-margin);
+  color: var(--control-label-color);
+  transition: all var(--speed) ease-in-out;
+}
+
+.control-reversed {
+  & > .control-label {
+    order: 1;
+    margin: 0;
+  }
+
+  & > .control-indicator {
+    order: 2;
+    margin: var(--control-label-margin);
+  }
+}

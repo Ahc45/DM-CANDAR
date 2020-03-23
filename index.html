@@ -1,0 +1,243 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>CY - TECHNOLOGY</title>
+    <link rel="stylesheet" href="css/bootstrap.css">
+    <link rel="stylesheet" href="css/main.css">
+    <script src="js/jquery.js"></script>
+    <script src="js/bootstrap.min.js"></script>
+    <script type="text/javascript" src="js/fullpage.js"></script>
+    <script  type="text/javascript" src="js/owl.carousel.js"></script>
+    <link rel="stylesheet" href="css/owl.carousel.css">
+</head>
+<body>
+    <div id="initial-loader" class="padded"><span id="loader-text"></span></div>
+    <header class="cd-header">
+		<div class="header-wrapper">
+			<!-- <div class="logo-wrap">
+				<a href="#" class="hover-target"><span>C</span>y</a>
+			</div> -->
+			<div class="nav-but-wrap">
+				<div class="menu-icon hover-target">
+					<span class="menu-icon__line menu-icon__line-left"></span>
+					<span class="menu-icon__line"></span>
+					<span class="menu-icon__line menu-icon__line-right"></span>
+				</div>					
+			</div>					
+		</div>				
+	</header>
+
+	<div class="nav">
+		<div class="nav__content">
+			<ul class="nav__list">
+				<li class="nav__list-item active-nav"><a href="#" class="hover-target">Home</a></li>
+				<li class="nav__list-item"><a href="#" class="hover-target">About</a></li>
+				<li class="nav__list-item"><a href="#" class="hover-target">Projects</a></li>
+				<li class="nav__list-item"><a href="#" class="hover-target">contact</a></li>
+			</ul>
+		</div>
+    </div>	
+    
+    <div id="fullpage">
+        <section  class="section">
+            <div class="landing">
+            <div class="container-fluid">
+                <div class="hero-container">
+                    <div class="white-line"></div>
+                    <h1 class="hero-title1">
+                        DM
+                        <span class="hero-titile1-sub">
+                            Technology
+                        </span>
+                    </h1>
+                
+                </div>
+                <div class="lower-section">
+                    <div class="row">
+                        <div class="col-md-3">
+                            <img src="../image/programmer.jpg" class="img-fluid img-programmer" alt="">
+                        </div>
+                        <div class="col-xs-4 col-md-4">
+                            <div class="we-do">
+                                <h3 class="hero-3">
+                                    WEB DEVELOPER
+                                </h3>
+                                <span>
+                                    Lorem ipsum dolor sit amet, consetetur
+                                    sadipscing elitr, sed diam nonumy eirmod
+                                </span>
+                            </div>
+                        </div> <div class="col-xs-4 col-md-5">
+                            <div class="transform-business">
+                            <h3 class="hero-tile-5">
+                                TRANSFORMING YOUR
+                                BUSINESS INTO
+                                MODERN AGE  </h3>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div></div>  
+  
+        </section>
+        
+        <section  class="section bg1 stack">
+            <div class="container">
+                <div class="header-title-container">
+                    <h1 class="hero-title2 tac">stacks
+                    </h1>
+                    <p class="sub-hero-title tac">Lorem ipsum dolor sit amet, consetetur sadipscing elitr, 
+                        sed diam nonumy eirmod tempor invidunt ut labore 
+                        et dolore magna aliquyam erat, sed diam voluptua.</p>
+                </div>
+                <div class="stack-container owl-carousel" >
+                    <div class="card item">
+                        <div class="stack-item">
+                            <img src="../image/php.png" alt="" class="stack-img">
+                            <p class="img-caption tac ">Php</p>
+                        </div>
+                        <div class="stack-item">
+                            <img src="../image/cpanel.png" alt="" class="stack-img">
+                            <p class="img-caption tac ">Cpanel</p>
+                       </div>
+                    </div>
+                    <div class="card item">
+                        <div class="stack-item">
+                            <img src="../image/jquery.png" alt="" class="stack-img">
+                            <p class="img-caption tac ">Jquery</p>
+                        </div>
+                        <div class="stack-item">
+                            <img src="../image/codeigniter.png" alt="" class="stack-img">
+                            <p class="img-caption tac ">Codeigniter</p>
+                       </div>
+                    </div>
+                     <div class="card item">
+                        <div class="stack-item">
+                            <img src="../image/css.png" alt="" class="stack-img">
+                            <p class="img-caption tac ">CSS</p>
+                        </div>
+                        <div class="stack-item">
+                            <img src="../image/photoshop.png" alt="" class="stack-img">
+                            <p class="img-caption tac ">Php</p>
+                       </div>
+                    </div>
+                    <div class="card item">
+                        <div class="stack-item">
+                            <img src="../image/xd.png" alt="" class="stack-img">
+                            <p class="img-caption tac ">aDOBE XD</p>
+                        </div>
+                        <div class="stack-item">
+                            <img src="../image/php.png" alt="" class="stack-img">
+                            <p class="img-caption tac ">Php</p>
+                       </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>	
+	
+	<div class='cursor' id="cursor"></div>
+	<div class='cursor2' id="cursor2"></div>
+	<div class='cursor3' id="cursor3"></div>
+  
+
+    <script>
+        (function($) { "use strict";
+
+        document.getElementsByTagName("body")[0].addEventListener("mousemove", function(n) {
+            t.style.left = n.clientX + "px", 
+            t.style.top = n.clientY + "px", 
+            e.style.left = n.clientX + "px", 
+            e.style.top = n.clientY + "px", 
+            i.style.left = n.clientX + "px", 
+            i.style.top = n.clientY + "px"
+        });
+        var t = document.getElementById("cursor"),
+            e = document.getElementById("cursor2"),
+            i = document.getElementById("cursor3");
+        function n(t) {
+            e.classList.add("hover"), i.classList.add("hover")
+        }
+        function s(t) {
+            e.classList.remove("hover"), i.classList.remove("hover")
+        }
+        s();
+        for (var r = document.querySelectorAll(".hover-target"), a = r.length - 1; a >= 0; a--) {
+            o(r[a])
+        }
+        function o(t) {
+            t.addEventListener("mouseover", n), t.addEventListener("mouseout", s)
+        }
+        
+        //Navigation
+    
+        var app = function () {
+            var body = undefined;
+            var menu = undefined;
+            var menuItems = undefined;
+            var init = function init() {
+                body = document.querySelector('body');
+                menu = document.querySelector('.menu-icon');
+                menuItems = document.querySelectorAll('.nav__list-item');
+                applyListeners();
+            };
+            var applyListeners = function applyListeners() {
+                menu.addEventListener('click', function () {
+                    return toggleClass(body, 'nav-active');
+                });
+            };
+            var toggleClass = function toggleClass(element, stringClass) {
+                if (element.classList.contains(stringClass)) element.classList.remove(stringClass);else element.classList.add(stringClass);
+            };
+            init();
+        }();
+    
+        
+        //Switch light/dark
+        
+        $("#switch").on('click', function () {
+            if ($("body").hasClass("light")) {
+                $("body").removeClass("light");
+                $("#switch").removeClass("switched");
+            }
+            else {
+                $("body").addClass("light");
+                $("#switch").addClass("switched");
+            }
+        });    
+    })(jQuery); 
+</script>
+ <script> $(document).ready(function() { 
+     if($(window).width() > 600){ 
+            $('#fullpage').fullpage({  });
+        }
+        $('.owl-carousel').owlCarousel({
+            loop:true,
+            margin:0,
+            responsiveClass:true,
+            items: 2,
+            nav:true,
+            slideBy: 2,
+            responsive:{
+                0:{
+                    items:2,
+                    nav:true,
+                },
+                600:{
+                    items:3,
+                    nav:false,
+                },
+                1000:{
+                    items:4,
+                    nav:true,
+                }
+            },
+            dots: true,
+        });
+    
+ });
+ </script>
+</body>
+</html>

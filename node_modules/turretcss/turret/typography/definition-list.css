@@ -1,0 +1,29 @@
+dl {
+  margin: var(--definition-list-margin);
+  padding: var(--definition-list-padding);
+  font-size: var(--definition-list-font-size);
+}
+
+dt {
+  margin: var(--definition-term-margin);
+  font-family: var(--definition-term-font-family);
+  font-weight: var(--definition-term-font-weight);
+  font-size: var(--definition-term-font-size);
+  font-style: var(--definition-term-font-style);
+  color: var(--definition-term-color);
+  line-height: var(--definition-term-line-height);
+  text-transform: var(--definition-term-text-transform);
+  letter-spacing: var(--definition-term-letter-spacing);
+}
+
+dd {
+  margin: var(--definition-description-margin);
+  font-family: var(--definition-description-font-family);
+  font-weight: var(--definition-description-font-weight);
+  font-size: var(--definition-description-font-size);
+  font-style: var(--definition-description-font-style);
+  color: var(--definition-description-color);
+  line-height: var(--definition-description-line-height);
+  text-transform: var(--definition-description-text-transform);
+  letter-spacing: var(--definition-description-letter-spacing);
+}

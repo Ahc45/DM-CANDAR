@@ -1,0 +1,11 @@
+.transition-fast {
+  transition: all var(--speed-fast) ease-in-out;
+}
+
+.transition-medium {
+  transition: all var(--speed-medium) ease-in-out;
+}
+
+.transition-slow {
+  transition: all var(--speed-slow) ease-in-out;
+}
